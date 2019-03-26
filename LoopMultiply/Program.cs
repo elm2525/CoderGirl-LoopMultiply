@@ -7,19 +7,28 @@ namespace LoopMultiply
         public static void Main()
         {
             Console.Write("Enter a number: ");
-            Console.WriteLine();
+            string userInput = Console.ReadLine();
+            int userValue = int.Parse(userInput);
+
 
             int sum = 0;
             int result = 0;
+            
 
-            for (int number = 2; number < 21; number++)
+            for (int i = 2; i < 21; i++)
             {
-                if (number > 0)
+
                 {
-                    result = number * number++;
+                    result = userValue * i;
                     Console.WriteLine(result);
 
                 }
+
+                //sum = ++result;
+                //Console.Write(sum);
+                   
+
+                
             }
 
             /*if (result > 0)
